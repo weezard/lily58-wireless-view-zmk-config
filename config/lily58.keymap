@@ -21,6 +21,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        ContolLY {
+            bindings = <&to 3>;
+            key-positions = <4 5>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -82,14 +91,16 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        layer_3 {
+        ControlLayer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&bootloader  &trans        &trans        &trans        &trans        &to 0                               &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans        &trans        &trans        &trans        &trans                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans        &trans        &trans        &trans        &trans        &bt BT_CLR    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                         &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans
             >;
+
+            label = "CtrlLy";
         };
     };
 };
