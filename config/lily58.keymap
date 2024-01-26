@@ -14,38 +14,42 @@
 };
 
 / {
-    behaviors {
-    };
-
     combos {
         compatible = "zmk,combos";
 
         ContolLY {
             bindings = <&to 1>;
             key-positions = <4 5>;
+            slow-release;
+            layers = <0>;
         };
 
         fromNav {
             bindings = <&to 0>;
             key-positions = <19 21>;
             layers = <2>;
+            slow-release;
         };
 
         toNav {
             bindings = <&to 2>;
             key-positions = <19 21>;
             layers = <0>;
+            slow-release;
         };
 
         Minus {
             bindings = <&kp MINUS>;
             key-positions = <31 32>;
             layers = <0 2>;
+            slow-release;
         };
 
         Equal {
             bindings = <&kp EQUAL>;
             key-positions = <33 32>;
+            slow-release;
+            layers = <0 2>;
         };
     };
 
@@ -65,7 +69,7 @@
 &kp ESC      &kp Q   &kp W   &kp E             &kp R         &kp T                                                                 &kp Y           &kp U               &kp I      &kp O    &kp P                &kp BSLH
 &mt F24 TAB  &kp A   &kp S   &kp D             &kp F         &kp G                                                                 &kp H           &kp J               &kp K      &kp L    &mt LCTRL SEMICOLON  &mt LS(LA(LC(LGUI))) SQT
 &kp LSHFT    &kp Z   &kp X   &kp C             &kp V         &kp B                                                                 &kp N           &kp M               &kp COMMA  &kp DOT  &kp FSLH             &mt LS(RIGHT_SHIFT) SQT
-&to 2        &kp N1  &kp N2  &kp N3            &kp N4        &kp N5            &mt LS(LA(LC(LGUI))) F13    &kp F24                 &kp N6          &kp N7              &kp N8     &kp N9   &kp N0               &none
+&to 2        &kp N1  &kp N2  &kp N3            &kp N4        &kp N5            &mt LS(LA(LC(LGUI))) F13    &mt F24 F24             &kp N6          &kp N7              &kp N8     &kp N9   &kp N0               &none
                              &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE                   &mt LA(LGUI) BACKSPACE  &mt RCMD ENTER  &mt RIGHT_ALT LBKT  &kp RBKT
             >;
         };
