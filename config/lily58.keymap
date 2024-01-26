@@ -17,9 +17,9 @@
     combos {
         compatible = "zmk,combos";
 
-        ContolLY {
+        ControlLY {
             bindings = <&to 1>;
-            key-positions = <5 41>;
+            key-positions = <5 42>;
             slow-release;
             layers = <0>;
         };
@@ -28,34 +28,29 @@
             bindings = <&to 0>;
             key-positions = <19 21>;
             layers = <2>;
-            require-prior-idle-ms = <450>;
         };
 
         toNav {
             bindings = <&to 2>;
             key-positions = <19 21>;
             layers = <0>;
-            require-prior-idle-ms = <450>;
         };
 
         Minus {
             bindings = <&kp MINUS>;
             key-positions = <31 32>;
             layers = <0 2>;
-            slow-release;
         };
 
         Equal {
             bindings = <&kp EQUAL>;
             key-positions = <33 32>;
-            slow-release;
             layers = <0 2>;
         };
 
-        skpNav {
+        skipNav {
             bindings = <&none>;
             key-positions = <19 20 21>;
-            slow-release;
             layers = <0 2>;
         };
     };
