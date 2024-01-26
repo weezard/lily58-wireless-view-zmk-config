@@ -25,18 +25,18 @@
         compatible = "zmk,combos";
 
         ContolLY {
-            bindings = <&to 3>;
+            bindings = <&to 1>;
             key-positions = <4 5>;
         };
 
         fromNav {
             bindings = <&to 0>;
             key-positions = <19 21>;
-            layers = <4>;
+            layers = <2>;
         };
 
         toNav {
-            bindings = <&to 4>;
+            bindings = <&to 2>;
             key-positions = <19 21>;
             layers = <0>;
         };
@@ -44,7 +44,7 @@
         Minus {
             bindings = <&kp MINUS>;
             key-positions = <31 32>;
-            layers = <0 4>;
+            layers = <0 2>;
         };
 
         Equal {
@@ -69,49 +69,9 @@
 &kp ESC      &kp Q   &kp W   &kp E             &kp R         &kp T                                                                      &kp Y           &kp U               &kp I      &kp O    &kp P     &kp BSLH
 &mt F24 TAB  &kp A   &kp S   &kp D             &kp F         &kp G                                                                      &kp H           &kp J               &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT    &kp Z   &kp X   &kp C             &kp V         &kp B                                                                      &kp N           &kp M               &kp COMMA  &kp DOT  &kp FSLH  &mt LS(RIGHT_SHIFT) SQT
-&to 4        &kp N1  &kp N2  &kp N3            &kp N4        &kp N5            &mt LS(LA(LC(LGUI))) F13    &kp F24                      &kp N6          &kp N7              &kp N8     &kp N9   &kp N0    &kp LSHFT
+&to 2        &kp N1  &kp N2  &kp N3            &kp N4        &kp N5            &mt LS(LA(LC(LGUI))) F13    &kp F24                      &kp N6          &kp N7              &kp N8     &kp N9   &kp N0    &kp LSHFT
                              &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE                   &mt LA(BACKSPACE) BACKSPACE  &mt RCMD ENTER  &mt RIGHT_ALT LBKT  &kp RBKT
             >;
-        };
-
-        lower_layer {
-            // ------------------------------------------------------------------------------------------------------------
-            // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
-            // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-            // |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
-            // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
-            //                     |      |      |      |        |  |       |      |       |       |
-
-            label = "Lower";
-            bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans     &trans           &trans    &trans    &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7     &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                        &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        raise_layer {
-            // ------------------------------------------------------------------------------------------------------------
-            // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
-            // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
-            // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
-            //                     |      |      |      |        |  |       |      |       |       |
-
-            label = "Raise";
-            bindings = <
-&trans     &trans  &trans  &trans   &trans   &trans                     &trans       &trans     &trans        &trans    &trans    &trans
-&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                     &trans       &trans     &kp UP_ARROW  &trans    &trans    &trans
-&kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &trans       &kp LEFT   &kp DOWN      &kp UP    &trans    &trans
-&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL     &kp LBKT  &kp RBKT  &kp BSLH
-                           &trans   &trans   &trans   &trans    &trans  &trans       &trans     &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         ControlLayer {
@@ -128,10 +88,10 @@
 
         nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &kp UP    &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans     &trans  &trans
+&to 0   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans     &trans  &trans
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans
             >;
 
