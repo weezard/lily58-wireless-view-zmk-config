@@ -28,14 +28,14 @@
             bindings = <&to 0>;
             key-positions = <19 21>;
             layers = <2>;
-            slow-release;
+            require-prior-idle-ms = <450>;
         };
 
         toNav {
             bindings = <&to 2>;
             key-positions = <19 21>;
             layers = <0>;
-            slow-release;
+            require-prior-idle-ms = <450>;
         };
 
         Minus {
@@ -48,6 +48,13 @@
         Equal {
             bindings = <&kp EQUAL>;
             key-positions = <33 32>;
+            slow-release;
+            layers = <0 2>;
+        };
+
+        skpNav {
+            bindings = <&none>;
+            key-positions = <19 20 21>;
             slow-release;
             layers = <0 2>;
         };
