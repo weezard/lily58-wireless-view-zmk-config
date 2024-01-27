@@ -62,7 +62,9 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <180>;
-            bindings = <&mt>, <&kp>;
+            bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <180>;
         };
 
         hovt: hovt {
@@ -70,7 +72,9 @@
             label = "HOVT";
             #binding-cells = <2>;
             tapping-term-ms = <180>;
-            bindings = <&mt>, <&kp>;
+            bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <150>;
         };
     };
 
