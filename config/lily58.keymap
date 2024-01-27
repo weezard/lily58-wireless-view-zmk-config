@@ -90,11 +90,11 @@
             retro-tap;
         };
 
-        Capture: Capture {
+        capture: capture {
             compatible = "zmk,behavior-tap-dance";
             label = "CAPTURE";
             #binding-cells = <0>;
-            bindings = <&kp K_COPY>, <&kp K_CUT>;
+            bindings = <&kp LG(C)>, <&kp LG(X)>;
         };
     };
 
@@ -175,7 +175,7 @@
         Actions {
             bindings = <
 &trans  &trans         &trans     &trans    &trans     &trans                             &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LG(LS(Z))  &kp LG(Z)  &Capture  &kp LG(V)  &mt F19 LG(F19)                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(LS(Z))  &kp LG(Z)  &capture  &kp LG(V)  &mt F19 LG(F19)                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &none          &none      &none     &none      &none                              &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans         &trans     &trans    &trans     &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                   &trans    &trans     &trans           &trans    &trans  &trans  &trans  &trans
