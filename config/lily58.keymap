@@ -76,6 +76,25 @@
 
             quick-tap-ms = <150>;
         };
+
+        tovhLt: tovhLt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TOVHLT";
+            bindings = <&lt>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "tap-preferred";
+        };
+    };
+
+    macros {
+        dollardot: dollardot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DLLR &kp DOT>;
+            label = "DOLLARDOT";
+        };
     };
 
     keymap {
@@ -91,11 +110,11 @@
 
             label = "Base";
             bindings = <
-&kp ESC      &kp Q   &kp W   &kp E             &kp R         &kp T                                                                 &kp Y           &kp U               &kp I      &kp O    &kp P                &kp BSLH
-&mt F24 TAB  &kp A   &kp S   &kp D             &kp F         &kp G                                                                 &kp H           &kp J               &kp K      &kp L    &mt LCTRL SEMICOLON  &tovh LS(LA(LC(LGUI))) SQT
-&kp LSHFT    &kp Z   &kp X   &kp C             &kp V         &kp B                                                                 &kp N           &kp M               &kp COMMA  &kp DOT  &kp FSLH             &hovt RIGHT_SHIFT GRAVE
-&to 2        &kp N1  &kp N2  &kp N3            &kp N4        &kp N5            &mt LS(LA(LC(LGUI))) F13    &mt F24 F24             &kp N6          &kp N7              &kp N8     &kp N9   &kp N0               &none
-                             &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE                   &mt LA(LGUI) BACKSPACE  &mt RCMD ENTER  &mt RIGHT_ALT LBKT  &kp RBKT
+&kp ESC      &kp Q         &kp W   &kp E             &kp R         &kp T                                                                        &kp Y           &kp U               &kp I      &kp O    &kp P                &kp BSLH
+&mt F24 TAB  &kp A         &kp S   &kp D             &kp F         &kp G                                                                        &kp H           &kp J               &kp K      &kp L    &mt LCTRL SEMICOLON  &tovh LS(LA(LC(LGUI))) SQT
+&kp LSHFT    &kp Z         &kp X   &kp C             &kp V         &kp B                                                                        &kp N           &kp M               &kp COMMA  &kp DOT  &kp FSLH             &hovt RIGHT_SHIFT GRAVE
+&to 2        &tovhLt 3 N1  &kp N2  &kp N3            &kp N4        &kp N5            &mt LS(LA(LC(LGUI))) F13    &mt F24 F24                    &kp N6          &kp N7              &kp N8     &kp N9   &kp N0               &none
+                                   &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE                   &tovh LA(BACKSPACE) BACKSPACE  &mt RCMD ENTER  &mt RIGHT_ALT LBKT  &kp RBKT
             >;
         };
 
@@ -113,14 +132,24 @@
 
         nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &kp UP    &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans     &trans  &trans
-&to 0   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans     &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                             &trans  &trans    &kp UP    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                             &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                             &trans  &trans    &trans    &trans     &trans  &trans
+&none   &trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans    &trans    &trans     &trans  &trans
+                        &trans  &trans  &trans  &tovhLt 0 SPACE    &trans  &trans  &trans    &trans
             >;
 
             label = "NAV";
+        };
+
+        calcfunc {
+            bindings = <
+&trans  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5                     &dollardot  &kp N7    &kp N8          &kp N9        &none                  &trans
+&trans  &kp F6  &kp F7  &kp F8  &kp F9   &kp F10                    &kp N0      &kp N4    &kp N5          &kp N6        &tovh SEMICOLON COLON  &trans
+&trans  &trans  &trans  &trans  &kp F11  &kp F12                    &none       &kp N1    &tovh COMMA N2  &tovh DOT N3  &trans                 &trans
+&trans  &trans  &trans  &trans  &trans   &trans   &trans    &trans  &none       &kp PLUS  &kp MINUS       &kp STAR      &kp EQUAL              &trans
+                        &trans  &trans   &trans   &trans    &trans  &trans      &trans    &trans
+            >;
         };
     };
 };
