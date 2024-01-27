@@ -21,7 +21,7 @@
             bindings = <&to 1>;
             key-positions = <5 42>;
             slow-release;
-            layers = <0>;
+            layers = <0 2 3 4>;
         };
 
         fromNav {
