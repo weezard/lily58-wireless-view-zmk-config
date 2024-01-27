@@ -110,7 +110,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        zero {
             // ------------------------------------------------------------------------------------------------------------
             // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
             // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
@@ -120,11 +120,11 @@
 
             label = "Base";
             bindings = <
-&tovhLt 3 ESC  &kp Q   &kp W   &kp E             &kp R         &kp T                                                                        &kp Y           &kp U                 &kp I             &kp O    &kp P                  &tovhLt 3 BSLH
-&tovh F24 TAB  &kp A   &kp S   &kp D             &kp F         &kp G                                                                        &kp H           &kp J                 &kp K             &kp L    &tovh LCTRL SEMICOLON  &tovh LS(LA(LC(LGUI))) SQT
-&kp LSHFT      &kp Z   &kp X   &kp C             &kp V         &kp B                                                                        &kp N           &kp M                 &tovhLt 4 COMMA   &kp DOT  &kp FSLH               &hovt RIGHT_SHIFT GRAVE
-&none          &kp N1  &kp N2  &kp N3            &kp N4        &kp N5            &mt LS(LA(LC(LGUI))) F13    &hovt F24 C_REPEAT             &kp N6          &kp N7                &kp N8            &kp N9   &kp N0                 &none
-                               &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &tovhLt 5 SPACE             &tovh LA(BACKSPACE) BACKSPACE  &mt RCMD ENTER  &tovh RIGHT_ALT LBKT  &tovh RCTRL RBKT
+&tovhLt 3 ESC  &kp Q   &kp W   &kp E             &kp R         &kp T                                                                         &kp Y           &kp U                 &kp I             &kp O    &kp P                  &tovhLt 3 BSLH
+&tovh F24 TAB  &kp A   &kp S   &kp D             &kp F         &kp G                                                                         &kp H           &kp J                 &kp K             &kp L    &tovh LCTRL SEMICOLON  &tovh LS(LA(LC(LGUI))) SQT
+&kp LSHFT      &kp Z   &kp X   &kp C             &kp V         &kp B                                                                         &kp N           &kp M                 &tovhLt 4 COMMA   &kp DOT  &kp FSLH               &hovt RIGHT_SHIFT GRAVE
+&none          &kp N1  &kp N2  &kp N3            &kp N4        &kp N5             &mt LS(LA(LC(LGUI))) F13    &hovt F24 C_REPEAT             &kp N6          &kp N7                &kp N8            &kp N9   &kp N0                 &none
+                               &kp LEFT_CONTROL  &kp LEFT_ALT  &hovt LGUI RETURN  &tovhLt 5 SPACE             &tovh LA(BACKSPACE) BACKSPACE  &mt RCMD ENTER  &tovh RIGHT_ALT LBKT  &tovh RCTRL RBKT
             >;
         };
 
@@ -172,7 +172,7 @@
             >;
         };
 
-        Actions {
+        actions {
             bindings = <
 &trans  &trans         &trans     &trans    &trans     &trans                             &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LG(LS(Z))  &kp LG(Z)  &capture  &kp LG(V)  &mt F19 LG(F19)                    &trans  &trans  &trans  &trans  &trans  &trans
