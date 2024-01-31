@@ -107,6 +107,16 @@
             quick-tap-ms = <150>;
             retro-tap;
         };
+
+        hovtLy: hovtLy {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOVTLY";
+            bindings = <&kp>, <&lt>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <140>;
+            flavor = "hold-preferred";
+        };
     };
 
     macros {
@@ -153,11 +163,11 @@
 
         nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &kp UP    &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans     &trans  &trans
-&none   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans     &trans  &none
-                        &trans  &trans  &trans  &to 0     &trans  &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                            &trans  &trans    &kp UP    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                            &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                            &trans  &trans    &trans    &trans     &trans  &trans
+&none   &trans  &trans  &trans  &trans  &trans          &trans    &trans  &trans  &trans    &trans    &trans     &trans  &none
+                        &trans  &trans  &hovtLy LGUI 0  &trans    &trans  &trans  &trans    &trans
             >;
 
             label = "NAV";
