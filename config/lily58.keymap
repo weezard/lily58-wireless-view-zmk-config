@@ -25,13 +25,13 @@
         };
 
         fromNav {
-            bindings = <&to 0>;
+            bindings = <&tog 0>;
             key-positions = <31 33>;
             layers = <2>;
         };
 
         toNav {
-            bindings = <&to 2>;
+            bindings = <&tog 2>;
             key-positions = <19 21>;
             layers = <0>;
             slow-release;
