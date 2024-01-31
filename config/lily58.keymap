@@ -135,7 +135,7 @@
 &tovh F24 TAB  &kp A  &kp S  &kp D             &kp F         &kp G                                                                           &kp H           &kp J                 &kp K             &kp L     &tovh LCTRL SEMICOLON  &tovh LS(LA(LC(LGUI))) SQT
 &kp LSHFT      &kp Z  &kp X  &kp C             &kp V         &kp B                                                                           &kp N           &kp M                 &tovhLt 4 COMMA   &kp DOT   &kp FSLH               &hovt RIGHT_SHIFT GRAVE
 &none          &none  &none  &none             &capture      &tovh LG(F13) LG(V)  &mt LS(LA(LC(LGUI))) F13    &hovtRepeat F24 0              &kp LG(Z)       &kp LEFT              &kp UP            &kp DOWN  &kp RIGHT              &none
-                             &kp LEFT_CONTROL  &kp LEFT_ALT  &hovt LGUI RETURN    &tovhLt 5 SPACE             &tovh LA(BACKSPACE) BACKSPACE  &mt RCMD ENTER  &tovh RIGHT_ALT LBKT  &tovh RCTRL RBKT
+                             &kp LEFT_CONTROL  &kp LEFT_ALT  &hovt LGUI RETURN    &tovhLt 2 SPACE             &tovh LA(BACKSPACE) BACKSPACE  &mt RCMD ENTER  &tovh RIGHT_ALT LBKT  &tovh RCTRL RBKT
             >;
         };
 
