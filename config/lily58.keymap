@@ -167,7 +167,7 @@
             bindings = <
 &trans  &kp CARET       &kp POUND            &kp DLLR  &kp PERCENT    &kp CARET                    &trans  &trans     &trans  &trans    &trans  &trans
 &trans  &kp EXCL        &mt LEFT_BRACE LPAR  &kp AT    &mt RBRC RPAR  &kp AMPS                     &trans  &trans     &trans  &trans    &trans  &trans
-&trans  &kp LS(LA(N2))  &kp LBRC             &kp STAR  &kp RBRC       &none                        &trans  &kp UNDER  &trans  &kp PLUS  &trans  &trans
+&trans  &kp LS(LA(N2))  &kp LBKT             &kp STAR  &kp RBKT       &none                        &trans  &kp UNDER  &trans  &kp PLUS  &trans  &trans
 &trans  &none           &none                &none     &none          &none      &trans    &trans  &trans  &trans     &trans  &trans    &trans  &trans
                                              &trans    &trans         &trans     &trans    &trans  &trans  &trans     &trans
             >;
