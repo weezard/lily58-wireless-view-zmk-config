@@ -19,22 +19,9 @@
 
         ControlLY {
             bindings = <&to 1>;
-            key-positions = <5 53>;
+            key-positions = <2 3 4>;
             slow-release;
             layers = <0 2 3 4>;
-        };
-
-        fromNav {
-            bindings = <&tog 0>;
-            key-positions = <31 33>;
-            layers = <2>;
-        };
-
-        toNav {
-            bindings = <&tog 2>;
-            key-positions = <19 21>;
-            layers = <0>;
-            slow-release;
         };
 
         Minus {
@@ -47,13 +34,6 @@
             bindings = <&kp EQUAL>;
             key-positions = <33 32>;
             layers = <0 2>;
-        };
-
-        skipNav {
-            bindings = <&none>;
-            key-positions = <31 33>;
-            layers = <0>;
-            slow-release;
         };
     };
 
@@ -141,10 +121,10 @@
 
             label = "Base";
             bindings = <
-&tovhLt 3 ESC  &kp Q                          &kp W  &kp E             &kp R         &kp T                                                                         &kp Y           &kp U             &kp I                 &kp O      &kp P                  &tovhLt 6 BSLH
-&tovh F24 TAB  &kp A                          &kp S  &kp D             &kp F         &kp G                                                                         &kp H           &kp J             &kp K                 &kp L      &tovh LCTRL SEMICOLON  &tovh LS(LA(LC(LGUI))) SQT
-&kp LSHFT      &kp Z                          &kp X  &kp C             &kp V         &kp B                                                                         &kp N           &kp M             &tovhLt 4 COMMA       &kp DOT    &kp FSLH               &hovt RIGHT_SHIFT GRAVE
-&none          &tovh LG(BACKSPACE) BACKSPACE  &none  &tog 2            &capture      &kp LG(V)          &mt LS(LA(LC(LGUI))) F13    &hovtRepeat F24 0              &kp LEFT        &kp DOWN          &kp UP                &kp RIGHT  &kp BACKSLASH          &none
+&tovhLt 3 ESC  &kp Q                          &kp W  &kp E             &kp R         &kp T                                                                         &kp Y           &kp U             &kp I                 &kp O      &kp P                      &tovhLt 6 BSLH
+&tovh F24 TAB  &kp A                          &kp S  &kp D             &kp F         &kp G                                                                         &kp H           &kp J             &kp K                 &kp L      &tovh LA(LCTRL) SEMICOLON  &tovh LS(LA(LC(LGUI))) SQT
+&kp LSHFT      &kp Z                          &kp X  &kp C             &kp V         &kp B                                                                         &kp N           &kp M             &tovhLt 4 COMMA       &kp DOT    &tovhLt 3 SLASH            &hovt RIGHT_SHIFT GRAVE
+&none          &tovh LG(BACKSPACE) BACKSPACE  &none  &tog 2            &capture      &kp LG(V)          &mt LS(LA(LC(LGUI))) F13    &hovtRepeat F24 0              &kp LEFT        &kp DOWN          &kp UP                &kp RIGHT  &kp BACKSLASH              &none
                                                      &kp LEFT_CONTROL  &kp LEFT_ALT  &hovt LGUI RETURN  &kp SPACE                   &tovh LA(BACKSPACE) BACKSPACE  &mt RCMD ENTER  &tovh RCTRL LBKT  &tovh RIGHT_ALT RBKT
             >;
         };
@@ -175,11 +155,11 @@
 
         calc {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &dollardot  &kp N7    &kp N8          &kp N9        &none                  &trans
-&trans  &kp N0  &kp N6  &kp N7  &kp N8  &kp N9                    &kp N0      &kp N4    &kp N5          &kp N6        &tovh SEMICOLON COLON  &trans
-&trans  &none   &none   &none   &none   &none                     &none       &kp N1    &tovh COMMA N2  &tovh DOT N3  &trans                 &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &none       &kp PLUS  &kp MINUS       &kp STAR      &kp EQUAL              &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans      &trans    &trans
+&trans  &kp N1  &kp N2  &kp N3     &kp N4  &kp N5                    &dollardot  &kp N7    &kp N8          &kp N9        &none                  &trans
+&trans  &kp N0  &kp N6  &kp N7     &kp N8  &kp N9                    &kp N0      &kp N4    &kp N5          &kp N6        &tovh SEMICOLON COLON  &trans
+&trans  &none   &none   &none      &none   &none                     &none       &kp N1    &tovh COMMA N2  &tovh DOT N3  &trans                 &trans
+&trans  &trans  &trans  &kp LG(Z)  &trans  &trans  &trans    &trans  &none       &kp PLUS  &kp MINUS       &kp STAR      &kp EQUAL              &trans
+                        &trans     &trans  &trans  &trans    &trans  &trans      &trans    &trans
             >;
         };
 
