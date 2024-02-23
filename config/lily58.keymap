@@ -121,11 +121,11 @@
 
             label = "Base";
             bindings = <
-&tovhLt 3 ESC  &kp Q                          &kp W  &kp E             &kp R         &kp T                                                                         &kp Y           &kp U             &kp I                 &kp O      &kp P                      &tovhLt 6 BSLH
-&tovh F24 TAB  &kp A                          &kp S  &kp D             &kp F         &kp G                                                                         &kp H           &kp J             &kp K                 &kp L      &tovh LA(LCTRL) SEMICOLON  &tovh LS(LA(LC(LGUI))) SQT
-&kp LSHFT      &kp Z                          &kp X  &kp C             &kp V         &kp B                                                                         &kp N           &kp M             &tovhLt 4 COMMA       &kp DOT    &tovhLt 3 SLASH            &hovt RIGHT_SHIFT GRAVE
-&none          &tovh LG(BACKSPACE) BACKSPACE  &none  &tog 2            &capture      &kp LG(V)          &mt LS(LA(LC(LGUI))) F13    &hovtRepeat F24 0              &kp LEFT        &kp DOWN          &kp UP                &kp RIGHT  &kp BACKSLASH              &none
-                                                     &kp LEFT_CONTROL  &kp LEFT_ALT  &hovt LGUI RETURN  &kp SPACE                   &tovh LA(BACKSPACE) BACKSPACE  &mt RCMD ENTER  &tovh RCTRL LBKT  &tovh RIGHT_ALT RBKT
+&tovhLt 3 ESC  &kp Q                          &kp W   &kp E             &kp R         &kp T                                                                         &kp Y           &kp U             &kp I                 &kp O      &kp P                      &tovhLt 6 BSLH
+&tovh F24 TAB  &kp A                          &kp S   &kp D             &kp F         &kp G                                                                         &kp H           &kp J             &kp K                 &kp L      &tovh LA(LCTRL) SEMICOLON  &tovh LS(LA(LC(LGUI))) SQT
+&kp LSHFT      &kp Z                          &kp X   &kp C             &kp V         &kp B                                                                         &kp N           &kp M             &tovhLt 4 COMMA       &kp DOT    &tovhLt 3 SLASH            &hovt RIGHT_SHIFT GRAVE
+&none          &tovh LG(BACKSPACE) BACKSPACE  &tog 2  &none             &capture      &kp LG(V)          &mt LS(LA(LC(LGUI))) F13    &hovtRepeat F24 0              &kp LEFT        &kp DOWN          &kp UP                &kp RIGHT  &kp BACKSLASH              &none
+                                                      &kp LEFT_CONTROL  &kp LEFT_ALT  &hovt LGUI RETURN  &kp SPACE                   &tovh LA(BACKSPACE) BACKSPACE  &mt RCMD ENTER  &tovh RCTRL LBKT  &tovh RIGHT_ALT RBKT
             >;
         };
 
