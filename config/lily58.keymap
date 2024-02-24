@@ -76,7 +76,7 @@
             #binding-cells = <0>;
             bindings = <&tovh LG(V) LG(C)>, <&kp LG(X)>;
 
-            tapping-term-ms = <180>;
+            tapping-term-ms = <140>;
         };
 
         hovtRepeat: hovtRepeat {
