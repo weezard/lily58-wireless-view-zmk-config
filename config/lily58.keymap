@@ -123,11 +123,11 @@
 
             label = "Base";
             bindings = <
-&tovhLt 3 ESC  &kp Q          &kp W   &kp E             &kp R         &kp T                                                                             &kp Y           &kp U             &kp I                 &kp O      &kp P                      &tovhLt 6 BSLH
-&tovh F24 TAB  &kp A          &kp S   &kp D             &kp F         &kp G                                                                             &kp H           &kp J             &kp K                 &kp L      &tovh LA(LCTRL) SEMICOLON  &tovh LS(LA(LC(LGUI))) SQT
-&kp LSHFT      &kp Z          &kp X   &kp C             &kp V         &kp B                                                                             &kp N           &kp M             &tovhLt 4 COMMA       &kp DOT    &tovhLt 3 SLASH            &hovt RIGHT_SHIFT GRAVE
-&none          &kp BACKSPACE  &tog 2  &none             &none         &capture           &kp F13                         &hovtRepeat F24 0              &kp LEFT        &kp DOWN          &kp UP                &kp RIGHT  &kp BACKSLASH              &none
-                                      &kp LEFT_CONTROL  &kp LEFT_ALT  &hovt LGUI RETURN  &tovh LS(LA(LC(LCMD))) SPACE    &tovh LA(BACKSPACE) BACKSPACE  &mt RCMD ENTER  &tovh RCTRL LBKT  &tovh RIGHT_ALT RBKT
+&tovhLt 3 ESC  &kp Q          &kp W   &kp E             &kp R         &kp T                                                                       &kp Y           &kp U             &kp I                 &kp O      &kp P                      &tovhLt 6 BSLH
+&tovh F24 TAB  &kp A          &kp S   &kp D             &kp F         &kp G                                                                       &kp H           &kp J             &kp K                 &kp L      &tovh LA(LCTRL) SEMICOLON  &tovh LS(LA(LC(LGUI))) SQT
+&kp LSHFT      &kp Z          &kp X   &kp C             &kp V         &kp B                                                                       &kp N           &kp M             &tovhLt 4 COMMA       &kp DOT    &tovhLt 3 SLASH            &hovt RIGHT_SHIFT GRAVE
+&none          &kp BACKSPACE  &tog 2  &none             &none         &capture           &kp F13                         &hovtRepeat F24 0        &kp LEFT        &kp DOWN          &kp UP                &kp RIGHT  &kp BACKSLASH              &none
+                                      &kp LEFT_CONTROL  &kp LEFT_ALT  &hovt LGUI RETURN  &tovh LS(LA(LC(LCMD))) SPACE    &tovh LA(F24) BACKSPACE  &mt RCMD ENTER  &tovh RCTRL LBKT  &tovh RIGHT_ALT RBKT
             >;
         };
 
@@ -168,7 +168,7 @@
         symbols {
             bindings = <
 &trans  &kp CARET       &kp POUND            &kp DLLR  &kp PERCENT    &none                       &trans  &trans     &trans  &trans    &trans  &trans
-&trans  &kp EXCL        &mt LEFT_BRACE LPAR  &kp AT    &mt RBRC RPAR  &kp AMPS                    &trans  &trans     &trans  &trans    &trans  &trans
+&trans  &kp EXCL        &mt LEFT_BRACE LPAR  &kp AT    &mt RBRC RPAR  &kp AMPS                    &trans  &kp BSLH   &trans  &kp PIPE  &trans  &trans
 &trans  &kp LS(LA(N2))  &kp LBKT             &kp STAR  &kp RBKT       &none                       &trans  &kp UNDER  &trans  &kp PLUS  &trans  &trans
 &trans  &none           &none                &none     &none          &none     &trans    &trans  &trans  &trans     &trans  &trans    &trans  &trans
                                              &trans    &trans         &trans    &trans    &trans  &trans  &trans     &trans
