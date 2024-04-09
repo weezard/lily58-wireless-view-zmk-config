@@ -135,7 +135,7 @@
 &tovhLt 3 ESC  &kp Q  &kp W  &tovhLt 5 E       &kp R         &kp T                                                             &kp Y           &kp U                 &kp I            &kp O      &kp P                  &hovt F18 GRAVE
 &tovh F24 TAB  &kp A  &kp S  &tovhLt 2 D       &kp F         &kp G                                                             &kp H           &kp J                 &kp K            &kp L      &tovh LCTRL SEMICOLON  &tovh F17 SQT
 &kp LSHFT      &kp Z  &kp X  &kp C             &kp V         &kp B                                                             &kp N           &kp M                 &tovhLt 4 COMMA  &kp DOT    &kp SLASH              &kp RIGHT_SHIFT
-&app_mode      &none  &none  &none             &kp F17       &capture  &mt LS(LC(LA(LCMD))) F13    &hovt LS(LA(LC(LCMD))) F13  &kp LEFT        &kp DOWN              &kp UP           &kp RIGHT  &mo 6                  &none
+&app_mode      &none  &none  &none             &kp F17       &capture  &mt LS(LC(LA(LCMD))) F13    &hovt LS(LA(LC(LCMD))) F13  &kp LEFT        &kp DOWN              &kp UP           &kp RIGHT  &mo 6                  &kp F24
                              &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LGUI  &kp SPACE                   &kp BACKSPACE               &mt RCMD ENTER  &tovh RIGHT_ALT LBKT  &tovhLt 3 RBKT
             >;
         };
