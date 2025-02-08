@@ -132,11 +132,11 @@
 
             label = "Base";
             bindings = <
-&tovhLt 3 ESC         &kp Q  &kp W  &tovhLt 5 E       &kp R         &kp T                                                  &kp Y           &kp U                 &kp I           &kp O    &kp P          &tovhLt 6 GRAVE
-&tovh LCTRL F13       &kp A  &kp S  &tovhLt 2 D       &kp F         &kp G                                                  &kp H           &kp J                 &kp K           &kp L    &kp SEMICOLON  &tovh RCTRL SQT
-&sk LSHFT             &kp Z  &kp X  &kp C             &kp V         &kp B                                                  &kp N           &kp M                 &kp COMMA       &kp DOT  &kp FSLH       &sk RSHIFT
-&kp LS(LA(LC(LGUI)))  &none  &none  &none             &kp F17       &tovh F18 F17  &mt F18 F17        &hovt F19 F17        &key_repeat     &kp LEFT              &kp DOWN        &kp UP   &kp RIGHT      &kp LS(LA(LC(LGUI)))
-                                    &kp LEFT_CONTROL  &sk LEFT_ALT  &sk LGUI       &tovhLt 5 SPACE    &tovhLt 4 BACKSPACE  &mt RCMD ENTER  &tovh RIGHT_ALT LBKT  &tovhLt 6 RBKT
+&tovhLt 3 ESC         &kp Q  &kp W  &kp E             &kp R         &kp T                                             &kp Y             &kp U                 &kp I           &kp O    &kp P          &tovhLt 6 GRAVE
+&tovh LCTRL F13       &kp A  &kp S  &tovhLt 2 D       &kp F         &kp G                                             &kp H             &kp J                 &kp K           &kp L    &kp SEMICOLON  &tovh RCTRL SQT
+&sk LSHFT             &kp Z  &kp X  &kp C             &kp V         &kp B                                             &kp N             &kp M                 &kp COMMA       &kp DOT  &kp FSLH       &sk RSHIFT
+&kp LS(LA(LC(LGUI)))  &none  &none  &none             &none         &none     &hovt F18 F17      &hovt F19 F17        &key_repeat       &kp LEFT              &kp DOWN        &kp UP   &kp RIGHT      &kp LS(LA(LC(LGUI)))
+                                    &kp LEFT_CONTROL  &sk LEFT_ALT  &sk LGUI  &tovhLt 5 SPACE    &tovhLt 4 BACKSPACE  &hovt RCMD ENTER  &tovh RIGHT_ALT LBKT  &tovhLt 6 RBKT
             >;
         };
 
