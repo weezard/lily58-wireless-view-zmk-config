@@ -132,11 +132,11 @@
 
             label = "Base";
             bindings = <
-&tovhLt 3 ESC    &kp Q                     &kp W  &kp E        &kp R         &kp T                                                  &kp Y             &kp U                 &kp I              &kp O    &kp P          &tovhLt 6 GRAVE
-&tovh LCTRL F13  &kp A                     &kp S  &tovhLt 2 D  &kp F         &kp G                                                  &kp H             &kp J                 &kp K              &kp L    &kp SEMICOLON  &tovh RCTRL SQT
-&sk LSHFT        &kp Z                     &kp X  &kp C        &kp V         &kp B                                                  &kp N             &kp M                 &kp COMMA          &kp DOT  &kp FSLH       &sk RSHIFT
-&none            &kp LS(LA(LC(LEFT_GUI)))  &none  &none        &none         &tovh F18 F17  &hovt F18 F17      &key_repeat          &hovt F19 F17     &kp LEFT              &kp DOWN           &kp UP   &kp RIGHT      &kp LS(LA(LC(LGUI)))
-                                                  &kp F24      &sk LEFT_ALT  &sk LGUI       &tovhLt 5 SPACE    &tovhLt 4 BACKSPACE  &hovt RCMD ENTER  &tovh RIGHT_ALT LBKT  &kp RIGHT_BRACKET
+&tovhLt 3 ESC    &kp Q  &kp W  &kp E        &kp R         &kp T                                                            &kp Y             &kp U                 &kp I              &kp O    &kp P          &tovhLt 6 GRAVE
+&tovh LCTRL F13  &kp A  &kp S  &tovhLt 2 D  &kp F         &kp G                                                            &kp H             &kp J                 &kp K              &kp L    &kp SEMICOLON  &tovh RCTRL SQT
+&sk LSHFT        &kp Z  &kp X  &kp C        &kp V         &kp B                                                            &kp N             &kp M                 &kp COMMA          &kp DOT  &kp FSLH       &sk RSHIFT
+&key_repeat      &none  &none  &none        &none         &tovh F18 F17  &sk LS(LA(LC(LEFT_GUI)))    &sk LS(LA(LC(LGUI)))  &hovt F19 F17     &kp LEFT              &kp DOWN           &kp UP   &kp RIGHT      &key_repeat
+                               &kp F24      &sk LEFT_ALT  &sk LGUI       &tovhLt 5 SPACE             &tovhLt 4 BACKSPACE   &hovt RCMD ENTER  &tovh RIGHT_ALT LBKT  &kp RIGHT_BRACKET
             >;
         };
 
@@ -176,7 +176,7 @@
 
         symbols {
             bindings = <
-&trans  &kp CARET  &kp POUND       &kp DLLR  &kp PERCENT      &kp LS(LA(N2))                             &caps_word     &none      &trans     &none     &none   &trans
+&trans  &kp CARET  &kp POUND       &kp DLLR  &kp PERCENT      &kp LS(LA(N2))                             &kp CAPSLOCK   &none      &trans     &none     &none   &trans
 &trans  &kp EXCL   &kp LPAR        &kp AT    &kp RPAR         &kp AMPS                                   &kp PIPE       &trans     &trans     &trans    &none   &trans
 &trans  &none      &kp LEFT_BRACE  &kp STAR  &kp RIGHT_BRACE  &none                                      &kp BACKSLASH  &kp UNDER  &kp COMMA  &kp PLUS  &trans  &trans
 &trans  &none      &none           &none     &none            &none           &trans             &trans  &trans         &trans     &trans     &trans    &trans  &trans
