@@ -186,11 +186,11 @@
 
         actions {
             bindings = <
-&trans  &trans  &trans  &trans    &trans         &trans                                &trans  &trans           &kp LA(F19)  &trans           &trans  &trans
-&trans  &none   &none   &capture  &none          &none                                 &trans  &kp LS(F19)      &kp F19      &kp LG(F19)      &trans  &trans
-&trans  &none   &none   &none     &none          &none                                 &trans  &kp LS(LG(F19))  &kp LC(F19)  &kp LA(LG(F19))  &trans  &trans
-&trans  &trans  &trans  &trans    &trans         &trans      &trans       &key_repeat  &trans  &trans           &trans       &trans           &trans  &trans
-                        &trans    &kp BACKSPACE  &kp RETURN  &kp LG(Z)    &trans       &trans  &trans           &trans
+&trans  &trans  &trans     &kp LG(X)      &trans     &trans                         &trans      &trans        &trans                     &trans        &trans      &trans
+&trans  &none   &kp LG(Z)  &kp LG(C)      &kp LG(V)  &none                          &kp K_PREV  &kp C_VOL_DN  &tovh K_MUTE K_PLAY_PAUSE  &kp C_VOL_UP  &kp K_NEXT  &trans
+&trans  &none   &none      &kp BACKSPACE  &kp ENTER  &none                          &trans      &trans        &trans                     &trans        &trans      &trans
+&trans  &trans  &trans     &trans         &trans     &trans  &trans    &key_repeat  &trans      &trans        &trans                     &trans        &trans      &trans
+                           &trans         &trans     &trans  &trans    &kp F18      &trans      &trans        &trans
             >;
         };
 
