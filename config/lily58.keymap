@@ -142,11 +142,11 @@
 
             label = "Base";
             bindings = <
-&tovhLt 3 ESC    &kp Q  &kp W             &kp E        &kp R         &kp T                                                                         &kp Y                       &kp U                 &kp I              &kp O    &kp P          &tovhLt 6 GRAVE
-&tovh LCTRL F13  &kp A  &tovh S LEFT_ALT  &tovhLt 2 D  &tovh F24 F   &kp G                                                                         &kp H                       &kp J                 &kp K              &kp L    &kp SEMICOLON  &tovh RCTRL SQT
-&sk LSHFT        &kp Z  &kp X             &kp C        &kp V         &kp B                                                                         &kp N                       &kp M                 &kp COMMA          &kp DOT  &kp FSLH       &sk RSHIFT
-&kp F18          &none  &none             &none        &none         &tovh LS(LA(LC(LGUI))) F17  &sk LS(LA(LC(LEFT_GUI)))    &sk LS(LA(LC(LGUI)))  &hovt LS(LA(LC(LGUI))) F17  &kp LEFT              &kp DOWN           &kp UP   &kp RIGHT      &key_repeat
-                                          &kp LCTRL    &sk LEFT_ALT  &hovt LGUI SPACE            &tovhLt 5 TAB               &tovhLt 4 BACKSPACE   &hovt RCMD ENTER            &tovh RIGHT_ALT LBKT  &kp RIGHT_BRACKET
+&tovhLt 3 ESC    &kp Q  &kp W             &kp E          &kp R         &kp T                                                                         &kp Y                       &kp U                 &kp I                                          &kp O    &kp P          &tovhLt 6 GRAVE
+&tovh LCTRL F13  &kp A  &tovh S LEFT_ALT  &tovhLt 2 D    &tovh F24 F   &kp G                                                                         &kp H                       &kp J                 &kp K                                          &kp L    &kp SEMICOLON  &tovh RCTRL SQT
+&sk LSHFT        &kp Z  &kp X             &kp C          &kp V         &kp B                                                                         &kp N                       &kp M                 &kp COMMA                                      &kp DOT  &kp FSLH       &sk RSHIFT
+&kp F18          &none  &none             &kp BACKSPACE  &kp RETURN    &tovh LS(LA(LC(LGUI))) F17  &sk LS(LA(LC(LEFT_GUI)))    &sk LS(LA(LC(LGUI)))  &hovt LS(LA(LC(LGUI))) F17  &kp LEFT              &kp DOWN                                       &kp UP   &kp RIGHT      &kp F18
+                                          &kp LCTRL      &sk LEFT_ALT  &hovt LGUI SPACE            &tovhLt 5 TAB               &tovhLt 4 BACKSPACE   &hovt RCMD ENTER            &tovh RIGHT_ALT LBKT  &tovh LS(LA(LC(RIGHT_BRACKET))) RIGHT_BRACKET
             >;
         };
 
