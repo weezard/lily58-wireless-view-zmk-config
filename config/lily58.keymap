@@ -46,14 +46,9 @@
             layers = <0>;
         };
 
-        Ctrl+Shift {
+        CtrlSh {
             bindings = <&kp LS(LCTRL)>;
             key-positions = <12 13>;
-        };
-
-        R+Ctrl+Shift {
-            bindings = <&kp RS(RSHIFT)>;
-            key-positions = <23 22>;
         };
     };
 
