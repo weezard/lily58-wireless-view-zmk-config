@@ -45,6 +45,11 @@
             key-positions = <20 21>;
             layers = <0>;
         };
+
+        Ctrl+Shift {
+            bindings = <&kp LS(LCTRL)>;
+            key-positions = <12 13>;
+        };
     };
 
     behaviors {
@@ -196,11 +201,11 @@
 
         actions {
             bindings = <
-&trans  &trans         &trans     &kp LG(X)      &trans     &trans                         &trans      &trans             &trans               &trans           &trans      &trans
-&trans  &kp LG(LS(Z))  &kp LG(Z)  &kp LG(C)      &kp LG(V)  &none                          &trans      &trans             &trans               &trans           &trans      &trans
-&trans  &none          &none      &kp BACKSPACE  &kp ENTER  &none                          &kp K_PREV  &kp C_VOLUME_DOWN  &tovh K_MUTE C_PLAY  &kp C_VOL_UP     &kp K_NEXT  &trans
-&trans  &trans         &trans     &trans         &trans     &trans  &trans    &key_repeat  &mkp RCLK   &mmv MOVE_LEFT     &mmv MOVE_DOWN       &mmv MOVE_RIGHT  &none       &trans
-                                  &trans         &trans     &trans  &trans    &trans       &mkp LCLK   &trans             &trans
+&trans  &trans         &trans     &kp LG(X)      &trans     &trans                              &trans      &trans             &trans               &trans           &trans      &trans
+&trans  &kp LG(LS(Z))  &kp LG(Z)  &kp LG(C)      &kp LG(V)  &kp LG(F18)                         &trans      &trans             &trans               &trans           &trans      &trans
+&trans  &none          &none      &kp BACKSPACE  &kp ENTER  &none                               &kp K_PREV  &kp C_VOLUME_DOWN  &tovh K_MUTE C_PLAY  &kp C_VOL_UP     &kp K_NEXT  &trans
+&trans  &trans         &trans     &trans         &trans     &trans       &trans    &key_repeat  &mkp RCLK   &mmv MOVE_LEFT     &mmv MOVE_DOWN       &mmv MOVE_RIGHT  &none       &trans
+                                  &trans         &trans     &trans       &trans    &trans       &mkp LCLK   &trans             &trans
             >;
         };
 
