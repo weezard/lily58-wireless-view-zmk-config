@@ -152,7 +152,7 @@
 
             label = "Base";
             bindings = <
-&tovhLt 3 ESC    &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                                        &kp N6            &kp N7                &kp N8                             &kp N9      &kp N0         &tovhLt 6 GRAVE
+&to 3            &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                                        &kp N6            &kp N7                &kp N8                             &kp N9      &kp N0         &tovhLt 6 GRAVE
 &tovh LCTRL F13  &kp Q           &kp W         &kp E         &kp R         &kp T                                                         &kp Y             &kp U                 &kp I                              &kp O       &kp P          &kp BSLH
 &tovh LCTRL ESC  &tovh LSHIFT A  &tovh LALT S  &tovhLt 2 D   &tovh F24 F   &kp G                                                         &kp H             &kp J                 &kp K                              &kp L       &kp SEMICOLON  &tovh RCTRL SQT
 &sk LSHIFT       &kp Z           &kp X         &kp C         &kp V         &kp B           &kp LC(LA(LS(LGUI)))    &kp LC(LA(LS(LGUI)))  &kp N             &kp M                 &kp COMMA                          &kp PERIOD  &kp SLASH      &kp LSHIFT
